@@ -11,6 +11,7 @@ class MainHandler(tornado.web.RequestHandler):
     def get(self):
         self.write("HSVJ Book Microservice v1")
 
+#This will fork out to the specific handlers based on the request
 def make_app():
     return tornado.web.Application([
         (r"/v1", MainHandler),
