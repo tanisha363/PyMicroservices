@@ -18,7 +18,7 @@ def make_app():
         (r"/v1/delbook", DelHandler, dict(books = books)),
         (r"/v1/getbooks", GetHandler, dict(books = books)),
         ])
-
+#This is the deamon that listens on port 8888 for http requests
 if __name__ == "__main__":
     app = make_app()
     app.listen(8888)
