@@ -6,7 +6,7 @@ from delhandler import DelHandler
 from gethandler import GetHandler
 
 books = Book()
-# This is is the main handler that class
+# This is is the main handler class
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
         self.write("NU Microservice v2.7.2")
