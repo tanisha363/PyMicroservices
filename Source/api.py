@@ -9,7 +9,7 @@ books = Book()
 # This is is the main handler class
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
-        self.write("NU Microservice v2.7.2")
+        self.write("NU Microservice v2.7.3")
 
 #This will fork out to the specific handlers based on the request
 def make_app():
